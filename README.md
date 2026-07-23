@@ -10,6 +10,8 @@ Fuente: Bank Marketing Dataset (UCI Machine Learning Repository) — campañas d
 Tamaño: 45,211 registros, 17 columnas.
 Variable objetivo: subscribed (yes/no) — si el cliente contrató el depósito a plazo.
 Tasa de conversión global: 11.7%.
+
+
 Resumen ejecutivo
 El historial con el banco es la señal más fuerte. Clientes con una campaña anterior exitosa convierten al 64.7% (vs. 9.2% en quienes nunca fueron contactados antes) — 7x la tasa base. Representa solo el 3.3% de la base, así que es potente pero de bajo alcance.
 Edad y ocupación importan más que el resto de variables demográficas. Clientes de 65+ años convierten al 42.5%, estudiantes al 28.7% — ambos muy por encima del promedio, pese a ser los segmentos más pequeños en volumen.
@@ -26,15 +28,20 @@ Tratamiento de pdays = -1 como categoría propia ("nunca contactado antes"), no 
 Creación de grupos de edad para capturar relaciones no lineales.
 Cálculo de tasa de conversión por segmento, filtrando grupos con menos de 50-100 observaciones para evitar ruido estadístico.
 Todas las comparaciones se hacen contra la tasa base (11.7%) como referencia visual en cada gráfico.
+
 Estructura del repositorio
 ├── bank_marketing_analysis.ipynb   # Notebook completo con EDA y gráficos
 ├── Bank_marketing_Dataset.csv      # Dataset original
 ├── images/                         # Gráficos exportados
 └── README.md
+
+
 Cómo correrlo
 bash
 pip install pandas seaborn matplotlib
 jupyter notebook bank_marketing_analysis.ipynb
+
+
 Herramientas
 
 Python · Pandas · Seaborn · Matplotlib
