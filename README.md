@@ -27,13 +27,22 @@ Creación de grupos de edad para capturar relaciones no lineales.
 Cálculo de tasa de conversión por segmento, filtrando grupos con menos de 50-100 observaciones para evitar ruido estadístico.
 Todas las comparaciones se hacen contra la tasa base (11.7%) como referencia visual en cada gráfico.
 Estructura del repositorio
-├── bank_marketing_analysis.ipynb   # Notebook completo con EDA y gráficos
-├── Bank_marketing_Dataset.csv      # Dataset original
-├── images/                         # Gráficos exportados
-└── README.md
+
+bank_marketing_analysis.ipynb   # Notebook completo con EDA y gráficos
+
+ Bank_marketing_Dataset.csv      # Dataset origin
+ 
+  Gráficos exportados
+
+README.md
+
+
 Cómo correrlo
+
 bash
+
 pip install pandas seaborn matplotlib
+
 jupyter notebook bank_marketing_analysis.ipynb
 
 
